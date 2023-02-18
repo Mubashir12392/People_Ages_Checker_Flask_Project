@@ -4,8 +4,12 @@ app = Flask(__name__)
 
 @app.route('/age_checker', methods=["GET", "POST"])
 def age_checker():
+    
+    #when request method is get, it will show a form page
     if request.method == "GET":
         return render_template('age_checker.html')
+    
+    #when request method is post, data will calaculte by following methods
     elif request.method == "POST":
         first = request.form['1st_person']
         second = request.form['2nd_person']
@@ -25,7 +29,7 @@ def age_checker():
             old = second
         else:
             old = third
-        
+        #at the end the result will show on html file
         return render_template("result.html", young= young, old= old)
 
         #This is a People Age Analyzer Python(Flask) base Small Project
