@@ -28,4 +28,4 @@ def age_checker():
         
         return render_template("result.html", young= young, old= old)
 
-        
+        #This is a People Age Analyzer Python(Flask) base Small Project
