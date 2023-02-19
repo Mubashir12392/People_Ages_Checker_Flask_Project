@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/age_checker', methods=["GET", "POST"])
 def age_checker():
     
-    
+    #when request method is get, it will show a form page
     if request.method == "GET":
         return render_template('age_checker.html')
     
