@@ -31,5 +31,6 @@ def age_checker():
             old = third
         #at the end the result will show on html file
         return render_template("result.html", young= young, old= old)
-
+    
+        #This is a People Age Analyzer Python(Flask) base Small Project
         
