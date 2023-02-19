@@ -9,7 +9,7 @@ def age_checker():
     if request.method == "GET":
         return render_template('age_checker.html')
     
-    
+    #when request method is post, data will calaculte by following methods
     elif request.method == "POST":
         first = request.form['1st_person']
         second = request.form['2nd_person']
